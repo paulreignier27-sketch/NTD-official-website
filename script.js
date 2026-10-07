@@ -2,10 +2,10 @@
 
 /* ---------- Content (edit here, no need to touch the HTML) ---------- */
 
-const PLACEHOLDER_PHOTO = "/photos/download.jpg";
+const PLACEHOLDER_PHOTO = "photos/download.jpg";
 
 const orgChart = [
-    [{ name: "Pastor Raymun Fajilan", position: "District Pastor", photo: "/photos/pastor-profile.jpg" }], //District Pastor
+    [{ name: "Pastor Raymun Fajilan", position: "District Pastor", photo: "photos/pastor-profile.jpg" }], //District Pastor
     [{ name: "Joe Mutia", position: "District President & San Agustin Elder" }],
     [
         { name: "Rommel Mallorca", position: "District Vice President & Sugod Elder" },
