@@ -158,6 +158,11 @@ section {
     cursor: pointer;
 }
 
+#sidebar.open ~ #menuToggle,
+#menuToggle[aria-expanded="true"] {
+  display: none;
+}
+
 /* Layout */
 
 main, footer {
