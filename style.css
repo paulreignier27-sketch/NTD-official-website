@@ -226,7 +226,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(40, 20, 60, .75), rgba(20, 10, 30, .85)), url(/photos/image.png) center / cover;
+    background: linear-gradient(rgba(40, 20, 60, .75), rgba(20, 10, 30, .85)), url(photos/image.png) center / cover;
     color: #fff;
     text-align: center;
 }
