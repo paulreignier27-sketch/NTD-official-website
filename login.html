@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/photos/ntd-logo.jpg">
+    <title>Log In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0d0115;
+            color: #e1c9dc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .logIn {
+            background-color: #17161773;
+            box-shadow: 2px 2px 10px rgba(88, 9, 137, 0.08);
+            width: 360px;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .logIn h2 {
+            margin-bottom: 5px;
+        }
+        .logIn p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        .field {
+            margin-bottom: 16px;
+            position: relative;
+        }
+        .field label {
+            font-size: 13px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .field input {
+            background: rgba(52, 52, 52, 0.285);
+            width: 100%;
+            color: #e1c9dc;
+            letter-spacing: .5px;
+            padding: 12px 40px 12px 12px;
+            border: 1.5px solid #ddd;
+        }
+        .field input:focus {
+            border-color: #111;
+        }
+        .togglePassword {
+            position: absolute;
+            right: 12px;
+            top: 34px;
+            cursor: pointer;
+            font-size: 14px;
+            user-select: none;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            margin: 12px 0px 20px;
+        }
+        .rememberMe {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+        }
+        .options a {
+            text-decoration: none;
+            color: #111;
+            font-weight: 600;
+        }
+        .logInBtn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(#51025a,#470155);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .logInBtn:hover,
+        .logInBtn:active {
+            background-color: #000;
+        }
+        .error {
+            color: #ff3b3b;
+            font-size: 12px;
+            margin-top: 6px;
+            display: none;
+        }
+        .signUp {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+        .signUp a {
+            font-weight: 700;
+            color: #cfcfcf;
+            text-decoration: none;
+        }
+        .signUpQA {
+            padding: 32px;
+            height: 300px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: linear-gradient(to bottom, #3302766b,#76088149);
+            border-radius: 20px;
+            backdrop-filter: blur(-2px);
+            box-shadow: 2px 2px 10px #330276ab;
+
+        }
+        .btn {
+            cursor: pointer;
+            transition: 0.2s;
+            width: 80px;
+            margin-top: 1rem;
+            border-radius: 20px;
+            height: 1.5rem;
+            border: 1px solid #330276;
+        }
+        .btn:hover, .btn:active {
+            transform: translateY(-2px);
+            background: linear-gradient(to right, #ae87e5,#e072ea);
+        }
+    </style>
+</head>
+<body>
+    <main class="logIn">
+        <h2>NTD Account</h2>
+        <p>Please log in to your account</p>
+        <form id="logInForm">
+            <div class="field">
+                <label>Email</label>
+                <input type="email" name="email" id="email" required>
+                <span class="error" id="emailError">Enter a valid email</span>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password" id="password" required>
+                <span class="togglePassword" id="togglePassword">Show</span>
+                <span class="error" id="passwordError">Password must be 8 digits long</span>
+            </div>
+            <div class="options">
+                <label class="rememberMe">
+                    <input type="checkbox">
+                    <span>Remember Me</span>
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button class="logInBtn" type="submit">Log In</button>
+        </form>
+        <div class="signUp">Don't have an account? <a id="signUpAnchor" href="#">Sign Up</a></div>
+    </main>
+    <div class="signUpQA">
+        <p class="paragraph">Are you one of officials in NTD</p>
+        <div>
+            <button class="btn" id="no">No</button>
+            <button class="btn" id="yes">Yes</button>
+        </div>
+    </div>
+</body>
+<script>
+    let form = document.getElementById("logInForm");
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    let togglePassword = document.getElementById("togglePassword");
+    let logInBtn = document.querySelector(".logInBtn");
+
+    togglePassword.addEventListener("click", () => {
+        let isPass = password.type === 'password';
+        password.type = isPass ? 'text' : 'password';
+        togglePassword.textContent = isPass ? 'Hide' : 'Show';
+    });
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let valid = true;
+
+        if(!email.value.includes("@gmail.com")) {
+            document.getElementById("emailError").style.display = "block";
+            valid = false;
+        } else {
+            document.getElementById("emailError").style.display = "none";
+        }
+
+        if (password.value.length < 8) {
+            document.getElementById("passwordError").style.display = "block";
+            valid = false
+        } else {
+            document.getElementById("passwordError").style.display = "none";
+        }
+
+        if (valid) {
+            localStorage.setItem('user_email', email.value);
+            alert('Welcome ' + email.value);
+            window.location.href = "/frontend/index.html";
+        }
+    });
+
+    //Sign Up
+    let signUpAnchor = document.getElementById("signUpAnchor");
+    let signUpQA = document.querySelector(".signUpQA");
+    let logIn = document.querySelector(".logIn");
+
+
+    signUpAnchor.addEventListener("click", () => {
+        logIn.style.display = "none";
+        signUpQA.style.display = "flex"
+    })
+
+    let yes = document.getElementById("yes");
+    let no = document.getElementById("no");
+
+    yes.addEventListener("click", () => {
+        alert("Are you sure?")
+        window.open("https:facebook.com", "_blank");
+    })
+    no.addEventListener("click", () => {
+        alert("ONLY OFFICIALS can access this");
+        window.location.href = "index.html"
+    })
+</script>
+</html>
