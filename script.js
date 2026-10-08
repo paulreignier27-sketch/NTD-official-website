@@ -6,11 +6,11 @@ const PLACEHOLDER_PHOTO = "photos/download.jpg";
 
 const orgChart = [
     [{ name: "Pastor Raymun Fajilan", position: "District Pastor", photo: "photos/pastor-profile.jpg" }], //District Pastor
-    [{ name: "Joe Mutia", position: "District President & San Agustin Elder" photo: "photos/mutia.jpg"}],
+    [{ name: "Joe Mutia", position: "District President & San Agustin Elder", photo: "photos/mutia.jpg"}],
     [
         { name: "Rommel Mallorca", position: "District Vice President & Sugod Elder" },
-        { name: "John Brian Roldan", position: "District Vice President & San Agustin Elder" photo: "photos/roldan.jpg"},
-        { name: "Chona Morales", position: "Secretary & San Agustin Elder" photo: "https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/796854468_1646095957087998_2537317253628663712_n.jpg?stp=dst-jpg_tt6&cstp=mx577x559&ctp=s577x559&_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFxgMnU9wz0twO7r0Y8vPiBljh63u9KTdSWOHre70pN1LjrF6Jw9zO7uuWEICxhG_dkbguq3siIret3QX_bycnV&_nc_ohc=bWF5qtJmoMAQ7kNvwFjovAS&_nc_oc=Adp6oOlnoqFhFVfbGwOzANcfb31Qo0g4l4lKxk-V_ZdVosxp-rkI5GL2MeVgV8iWv9B1KHqcptFZPSaMYdVWHhTo&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&_nc_gid=kPLxbXg85JtZdjf8miv6Kg&_nc_ss=7b2a8&oh=00_AQPMSml3HsNMz8_u_cX3-D07Z6cglpKBx9vtxS9AsS7ISA&oe=6ACD4DD0"},
+        { name: "John Brian Roldan", position: "District Vice President & San Agustin Elder", photo: "photos/roldan.jpg"},
+        { name: "Chona Morales", position: "Secretary & San Agustin Elder", photo: "https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/796854468_1646095957087998_2537317253628663712_n.jpg?stp=dst-jpg_tt6&cstp=mx577x559&ctp=s577x559&_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFxgMnU9wz0twO7r0Y8vPiBljh63u9KTdSWOHre70pN1LjrF6Jw9zO7uuWEICxhG_dkbguq3siIret3QX_bycnV&_nc_ohc=bWF5qtJmoMAQ7kNvwFjovAS&_nc_oc=Adp6oOlnoqFhFVfbGwOzANcfb31Qo0g4l4lKxk-V_ZdVosxp-rkI5GL2MeVgV8iWv9B1KHqcptFZPSaMYdVWHhTo&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&_nc_gid=kPLxbXg85JtZdjf8miv6Kg&_nc_ss=7b2a8&oh=00_AQPMSml3HsNMz8_u_cX3-D07Z6cglpKBx9vtxS9AsS7ISA&oe=6ACD4DD0"},
         { name: "Gladys Jongay", position: "Treasurer"},
         { name: "Francis Noe", position: "District Youth Leader", photo: "https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/626874935_26273689202319906_5955990311497092702_n.jpg?stp=dst-jpg_tt6&cstp=mx720x960&ctp=s720x960&_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGj5o7E7DU_HGgU5AJm_hUC0gSxpH5OpzjSBLGkfk6nONaZa_tf1QVLJDl3yfD2o8tZx29lYZKexVbFrv-K4KQW&_nc_ohc=df9u8CkaTwQQ7kNvwGctFZ5&_nc_oc=Adqo_8pRVkCO1XnKvaluuDYcTCEn_8nKajqC53PukebtKUGh__9fOR5c432UzBTjrT-4dMBATNRmRLQmwLM4-AVo&_nc_zt=23&_nc_ht=scontent-mnl1-2.xx&_nc_gid=fMdJG8w3TuwJiERWeENN9Q&_nc_ss=7b2a8&oh=00_AQNDpa-bnGeew7juVqpAHcWL3CY5mBG5U4Ij-Zx8Bj-Krg&oe=6ACC1BB4" },
     ], //For District Officers
