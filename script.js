@@ -23,7 +23,7 @@ const orgChart = [
         { name: "Nenette Lorenzo", position: "Concepcion Norte Elder", photo: "https://scontent-mnl3-2.xx.fbcdn.net/v/t39.30808-6/473054147_1175592760650054_6876257426040782697_n.jpg?stp=dst-jpg_tt6&cstp=mx750x750&ctp=s750x750&_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGtNoSwkWbBCWke1uEAVk5JaaofERfxdq9pqh8RF_F2r0tdWFy89iB2Mxp_Qkhy2fJvX5XQlKZ2-9BU-mEuRzgI&_nc_ohc=0zkwJ2B-xiQQ7kNvwEZH2kX&_nc_oc=Adpd0qUFR1vWrFriSqxeB4Mv0lAbNJAcB2wSulyH2Mj6WlJ00eqRdVAmACpN6oWOBKRcB5TgYLLjl9YRC82hx9tb&_nc_zt=23&_nc_ht=scontent-mnl3-2.xx&_nc_gid=qQZqJukvOKCBBF-AcoNIIg&_nc_ss=7b2a8&oh=00_AQMSOfXPATVQ-pWAojNvOjVpS3SIWpxB0SeTNcp6t7lFeQ&oe=6ACC0DD0"},
         { name: "Gieraldine Visca", position: "Concepcion Sur Elder", photo: "https://scontent-mnl1-1.xx.fbcdn.net/v/t39.30808-6/463618413_4693876934170961_7812467560921334839_n.jpg?stp=dst-jpg_tt6&cstp=mx953x960&ctp=s953x960&_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeENT45INBlK5kh0VEFojU980vQbLQKRjrHS9BstApGOsdZ8d_CsJIrGRvn9aYyXMWRV67_9APmAMzTgB6R2VXtu&_nc_ohc=XIJulH0V0T8Q7kNvwF2LcKi&_nc_oc=AdoSBot8tWB_q-MBbnFZxbYTKQmT6KWmJXBVRAFnJift67CU45Z-93ggvwpoKonVOPNtflykQL9-C_7QbxGksL2W&_nc_zt=23&_nc_ht=scontent-mnl1-1.xx&_nc_gid=kgvaZNlSGBBOCaMxJCGaOA&_nc_ss=7b2a8&oh=00_AQP252jC21dQdHOCcUq50kcqBva_28LtPwaPukKoJLjTEg&oe=6ACC1EFF"},
         { name: "Daniel Rio", position: "Concepcion Sur Elder"},
-        { name: "Jester Francisco", position: "Paroyhog Elder" photo: "photos/jester.jpg"},
+        { name: "Jester Francisco", position: "Paroyhog Elder", photo: "photos/jester.jpg"},
     ]//For Elders in Sta. Maria
 
 
