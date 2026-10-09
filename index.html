@@ -28,7 +28,7 @@
                 <li><a href="#events"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>Events</a></li>
                 <li><a href="#gallery"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><circle cx="8.5" cy="8.5" r="1.5" /><polyline points="21 15 16 10 5 21" /></svg>Gallery</a></li>
                 <li><a href="#announcements"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" /><path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>Announcements</a></li>
-                <li><a href="#sermonOutline"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /><line x1="12" y1="6" x2="12" y2="12" /><line x1="9" y1="8" x2="15" y2="8" /></svg>Sermon Outline</a></li>
+                <li><a href="#sermonOutline"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /><line x1="12" y1="6" x2="12" y2="12" /><line x1="9" y1="8" x2="15" y2="8" /></svg>Sermon</a></li>
                 <li><a href="#contact"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>Contact</a></li>
             </ul>
         </nav>
@@ -42,7 +42,7 @@
                 <p class="motto">United by Christ - Mission for all</p>
                 <div class="heroActions">
                     <a class="btn" href="https://www.adventistlocator.org/?lat=12.465430883644089&lng=122.10913992672761&zoom=9.857429846169484" target="_blank" rel="noopener noreferrer">Find a church</a>
-                    <a class="btn btnSolid" href="sermons/sermons.html">Watch sermons <svg class="icon"><use href="#i-arrow"/></svg></a>
+                    <a class="btn btnSolid" href="sermons/sermons.html">Watch sermons<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 5V19L19 12L8 5Z"/></svg></a>
                 </div>
                 <div class="cardGrid">
                     <a class="card" href="#events">
@@ -78,7 +78,9 @@
                     </div>
                 </div>
             </div>
-            <img class="aboutPhoto" src="photos/about-picture.jpg" alt="Members of the Northern Tablas District" loading="lazy">
+            <div class="imgAbout">
+                <img class="aboutPhoto" src="photos/about-picture.jpg" alt="Members of the Northern Tablas District" loading="lazy">
+            </div>
         </section>
 
         <section class="orgChartSect" id="orgChart">
@@ -87,22 +89,13 @@
         </section>
 
         <section class="eventsSect" id="events">
-            <h2>Events</h2>
+            <h2>Upcoming Events</h2>
             <div class="eventGrid" id="eventList"></div>
         </section>
 
         <section class="gallerySect" id="gallery">
             <h2>Gallery</h2>
-            <div>
-                <div class="galleryDiv">
-                    <img src="hello.jpg" alt="" class="imgGallery">
-                    <img src="programmer.jpg" alt="" class="imgGallery">
-                    <img src="q.jpg" alt="" class="imgGallery">
-                    <img src="r.jpg" alt="" class="imgGallery">
-                    <img src="world.jpg" alt="" class="imgGallery">
-                    <img src="https://scontent-mnl3-1.xx.fbcdn.net/v/t39.30808-6/835363139_122182986170709496_6032829203073629474_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFKRwxtA-h-sXdznkMwVsk-OKhE_nWo2o04qET-dajajTJG8C5H3pOO-0LCl7mcHTEXgIyyrriaHzZkMHpjDTxW&_nc_ohc=o_ltOvy80oEQ7kNvwFpeZWn&_nc_oc=Adov-2lYEkEnU2P_FVstTTVl3mycNazfS-qdIlfymaAVSErb8hT0wiaHkjUA8EoKcPHm84wv9ixM64wUIJdX-NI7&_nc_zt=23&_nc_ht=scontent-mnl3-1.xx&_nc_gid=uO-aYprnmDvSChQrWSZG7g&_nc_ss=7b2a8&oh=00_AQPmYUzZgEEKH4eEpPPJ_Y0Uxe1BdeAZXzrbS40d_xDkRw&oe=6ACD55D3" alt="" class="imgGallery">
-                </div>
-            </div>
+            <div class="galleryGrid" id="galleryGrid"></div>
         </section>
 
         <section class="announcementsSect" id="announcements">
@@ -112,33 +105,14 @@
 
         <section class="sermonSect" id="sermonOutline">
             <div class="sectionHead">
-                <h2>Sermon outline</h2>
-                <label class="srOnly" for="videos">Choose a video</label>
-                <select id="videos">
-                    <option value="" disabled selected>Select a video</option>
-                    <option value="1">Lesson 1 - The Creator Speaks</option>
-                </select>
+                <h2>Sermon Outline</h2>
                 <a class="btn" href="sermons/sermons.html">See all</a>
             </div>
             <article class="sermonCard">
-                <img src="photos/ntd-logo.jpg" alt="" loading="lazy">
-                <div>
-                    <h3>Lesson 1 - The Creator Speaks</h3>
-                    <p>This week on Hope Sabbath School, we begin a new series, "Prophets of God", with our first study, "The Creator Speaks".</p>
-                </div>
-            </article>
-            <article class="sermonCard">
-                <img src="photos/ntd-logo.jpg" alt="" loading="lazy">
-                <div>
-                    <h3>Lesson 2 - The Creator Speaks</h3>
-                    <p>This week on Hope Sabbath School, we begin a new series, "Prophets of God", with our first study, "The Creator Speaks".</p>
-                </div>
-            </article>
-            <article class="sermonCard">
-                <img src="photos/ntd-logo.jpg" alt="" loading="lazy">
-                <div>
-                    <h3>Lesson 3 - The Creator Speaks</h3>
-                    <p>This week on Hope Sabbath School, we begin a new series, "Prophets of God", with our first study, "The Creator Speaks".</p>
+                <img src="https://i.ytimg.com/vi/39WSoKE1zE4/hqdefault.jpg" alt="" loading="lazy">
+                <div onclick="window.location.href=`https://www.youtube.com/watch?v=39WSoKE1zE4`" class="sermonContent">
+                    <h3>Maturity in The Faith</h3>
+                    <p>Discusses the concept of spiritual maturity and the necessity of continuous growth in one's faith. <br> GROW, G-grow, R-Renewing the Mind, O-Obedience, W-Worship</p>
                 </div>
             </article>
         </section>
@@ -154,15 +128,27 @@
         <div class="footerContent">
             <div>
                 <p>Facebook:</p>
-                <a href="https:www.facebook.com/profile.php?id=61586791796410" class="socmedLink">Northern Tablas District Official FB Page</a><br>
-                <a href="https://www.facebook.com/profile.php?id=61571284893826" class="socmedLink">Public Campus Ministry NTD</a>
+                <a href="https://www.facebook.com/profile.php?id=61586791796410" class="socmedLink" target="_blank" rel="noopener noreferrer">Northern Tablas District Official FB Page</a><br>
+                <a href="https://www.facebook.com/profile.php?id=61571284893826" class="socmedLink" target="_blank" rel="noopener noreferrer">Public Campus Ministry NTD</a>
             </div>
             <div class="address">
                 <p>San Agustin, Romblon, Philippines</p>
                 <p>Sta. Maria(Imelda), Romblon, Philippines</p>
             </div>
         </div>
-        <small>&copy; 2026 Northern Tablas District of the Seventh-day Adventist Church. All rights reserved.</small>
+        <div>
+            <small>&copy; 2026 Northern Tablas District of the Seventh-day Adventist Church. All rights reserved.</small>
+            <small>Designed and Developed by: Paul Reignier Bediones</small>
+        </div>
     </footer>
+
+    <!-- Gallery lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+        <button class="lbBtn lbClose" id="lbClose" aria-label="Close">&times;</button>
+        <button class="lbBtn lbPrev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+        <img id="lbImg" src="" alt="">
+        <button class="lbBtn lbNext" id="lbNext" aria-label="Next photo">&#8250;</button>
+        <div class="lbCount" id="lbCount" aria-live="polite"></div>
+    </div>
 </body>
 </html>
