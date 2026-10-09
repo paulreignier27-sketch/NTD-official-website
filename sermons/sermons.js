@@ -136,7 +136,8 @@ if (pickedCard) {
 
 /* ---------- Prayer request ---------- */
 // If empty, requests are only saved in this browser (demo mode).
-const PRAYER_ENDPOINT = "https://formspree.io/f/xrpeqvez";
+//https://formspree.io/f/xrpeqvez
+const PRAYER_ENDPOINT = "";
 
 const form = $("prayerForm");
 const message = $("pMessage");
