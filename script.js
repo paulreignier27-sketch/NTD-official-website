@@ -30,7 +30,7 @@ const orgChart = [
 const events = [
     {
         name: "Pathfinder Camping 2026",
-        location: "No location specified yet",
+        location: "San Agustin, Romblon",
         date: "2026-10-30 - 2026-11-02", // single day: "2026-11-27"
         theme: "Be prepared. Be adventurous. Be closer to God.",
     },
