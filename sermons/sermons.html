@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sermon Outline | NTD</title>
+    <link rel="icon" href="/photos/ntd-logo.jpg">
+    <link rel="stylesheet" href="sermons.css">
+    <script src="sermons.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <a class="brand" href="../index.html"><img src="/photos/ntd-logo.jpg" alt="">Northern Tablas District</a>
+            <nav aria-label="Page">
+                <a href="../index.html">Home</a>
+                <a href="#prayer">Prayer request</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section id="sermons">
+        <div class="wrap">
+            <h1>Sermon outline</h1>
+            <!-- <p class="lead">Watch Sermons.</p> -->
+
+            <div class="toolbar" role="search">
+                <div>
+                    <label for="search">Search</label>
+                    <input type="search" id="search" placeholder="e.g. creation, prayer, Lesson 3" autocomplete="off">
+                </div>
+                <div>
+                    <label for="topic">Topic</label>
+                    <select id="topic"><option value="">All topics</option></select>
+                </div>
+                <div>
+                    <label for="month">Date</label>
+                    <select id="month"><option value="">Any date</option></select>
+                </div>
+                <div>
+                    <label for="sort">Sort by</label>
+                    <select id="sort">
+                        <option value="newest">Newest first</option>
+                        <option value="oldest">Oldest first</option>
+                        <option value="az">Title A to Z</option>
+                        <option value="za">Title Z to A</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="status">
+                <p id="count" role="status" aria-live="polite"></p>
+                <button type="button" class="linkBtn" id="reset" hidden>Clear all filters</button>
+            </div>
+
+            <div class="grid" id="grid"></div>
+            <div class="empty" id="empty" hidden>
+                <h3>No sermons found</h3>
+                <p>Try a different word or clear the filters.</p>
+                <button type="button" class="btn" id="emptyReset">Clear all filters</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="prayer" id="prayer">
+        <div class="wrap prayerLayout">
+            <div>
+                <h2>Send a prayer request</h2>
+                <p class="lead">Share what is on your heart. Our district pastor and prayer team will pray for you. Your name and contact details are optional.</p>
+            </div>
+            <form id="prayerForm" novalidate>
+                <div class="twoCol">
+                    <div>
+                        <label for="pName">Name <span class="hint">(optional)</span></label>
+                        <input id="pName" name="name" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="pContact">Email or phone <span class="hint">(optional)</span></label>
+                        <input id="pContact" name="contact" autocomplete="email">
+                    </div>
+                </div>
+                <div>
+                    <label for="pTopic">What is it about?</label>
+                    <select id="pTopic" name="category">
+                        <option>Healing</option><option>Family</option><option>Guidance</option>
+                        <option>Thanksgiving</option><option>Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pMessage">Your prayer request</label>
+                    <textarea id="pMessage" name="message" maxlength="600" required aria-describedby="pError pCount"></textarea>
+                    <div class="counter" id="pCount">0 / 600</div>
+                    <p class="error" id="pError" role="alert"></p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="pPrivate" name="private" checked>
+                    <label for="pPrivate">Keep this private. Only the pastor and prayer team will see it.</label>
+                </div>
+                <button class="btn btnSolid" type="submit" id="pSubmit">Send prayer request</button>
+                <div id="pResult" role="status" aria-live="polite"></div>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <footer id="contact">
+        <div class="logoFooter">
+            <div>
+                <img src="/photos/ntd-logo.jpg" alt="" width="64" height="64">
+                <p>Northern Tablas District</p>
+            </div>
+        </div>
+        <div class="footerContent">
+            <div>
+                <p>Facebook:</p>
+                <a href="https:www.facebook.com/profile.php?id=61586791796410" class="socmedLink">Northern Tablas District Official FB Page</a><br>
+                <a href="https://www.facebook.com/profile.php?id=61571284893826" class="socmedLink">Public Campus Ministry NTD</a>
+            </div>
+            <div class="address">
+                <p>San Agustin, Romblon, Philippines</p>
+                <p>Sta. Maria(Imelda), Romblon, Philippines</p>
+            </div>
+        </div>
+        <div class="creditFooter">
+            <small>&copy; 2026 Northern Tablas District of the Seventh-day Adventist Church. All rights reserved.</small>
+            <small>Designed and Developed by: Paul Reignier Bediones</small>
+        </div>
+    </footer>
+</body>
+</html>
