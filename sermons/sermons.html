@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sermon Outline | NTD</title>
-    <link rel="icon" href="../photos/ntd-logo.jpg">
+    <title>Sermon Outline</title>
+    <link rel="icon" href="/photos/ntd-logo.jpg">
     <link rel="stylesheet" href="sermons.css">
     <script src="sermons.js" defer></script>
 </head>
 <body>
     <header>
         <div class="wrap">
-            <a class="brand" href="../index.html"><img src="../photos/ntd-logo.jpg" alt="">Northern Tablas District</a>
+            <a class="brand" href="../index.html"><img src="/photos/ntd-logo.jpg" alt="">Northern Tablas District</a>
             <nav aria-label="Page">
                 <a href="../index.html">Home</a>
                 <a href="#prayer">Prayer request</a>
@@ -68,7 +68,7 @@
         <div class="wrap prayerLayout">
             <div>
                 <h2>Send a prayer request</h2>
-                <p class="lead">Share what is on your heart. Our district pastor and prayer team will pray for you. Your name and contact details are optional.</p>
+                <p class="lead">Share your prayer request here. Our district pastor and prayer team will pray for you. Your name and contact details are optional.</p>
             </div>
             <form id="prayerForm" novalidate>
                 <div class="twoCol">
@@ -100,15 +100,38 @@
                 </div>
                 <button class="btn btnSolid" type="submit" id="pSubmit">Send prayer request</button>
                 <div id="pResult" role="status" aria-live="polite"></div>
+                <p class="privacy-trigger-text">
+                    By submitting this/these form, you agree to our
+                    <a href="#" id="openPrivacy" class="privacy-link">Privacy Policy Terms and Conditions</a>
+                </p>
+                <div id="privacyModal" class="modal-overlay">
+                    <div class="modal-card">
+                        <h3 class="modal-title">Privacy Policy Terms</h3>
+                    </div>
+                    <small class="modal-subtitle">Northern Tablas District | Seventh-day Adventist Church</small>
+                    <hr class="modal-divider">
+                    <div class="modal-body-content">
+                        <p>Your privacy is sacred to us. Because this website runs safely without custom backend server database, your form submissions are handled securely using industry-standard tools (<strong>Formspree</strong>) and (<strong>Gmail</strong>).  </p>
+                        <ul>
+                            <li><strong>What We Collect: </strong>Your prayer request message is required. Submitting your name and email address is completely optional</li>
+                            <li><strong>Private by Default: </strong>Your request remains strictly confidential within our small prayer team unless you specifically toggle your form selection to public</li>
+                            <li><strong>No Spam: </strong>We never sell your data. Emails are used strictly to manage your submission, not for unauthorized marketing.</li>
+                        </ul>
+                        <p class="data-control-box">
+                            <strong>Data Control:</strong> You can request to delete or pull down your submission at any time by contacting our developer.
+                            <a href="mailto:bedionespaulreignier@gmail.com">bedionespaulreignier@gmail.com</a>
+                        </p>
+                    </div>
+                    <button id="closePrivacy" class="modal-close-btn">I understand</button>
+                </div>
             </form>
         </div>
     </section>
     </main>
-
     <footer id="contact">
         <div class="logoFooter">
             <div>
-                <img src="../photos/ntd-logo.jpg" alt="" width="64" height="64">
+                <img src="/photos/ntd-logo.jpg" alt="" width="64" height="64">
                 <p>Northern Tablas District</p>
             </div>
         </div>
