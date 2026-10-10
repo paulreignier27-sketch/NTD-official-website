@@ -559,6 +559,88 @@ footer small {
     align-items: center;
 }
 
+/* ---------- Skeleton loading ---------- */
+
+@keyframes shimmer {
+    0%   { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+}
+
+.skBlock,
+img.skel {
+    background: linear-gradient(90deg, #2a0a3d 25%, #44145f 50%, #2a0a3d 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s linear infinite;
+    border-radius: 8px;
+}
+
+/* Images that are still loading */
+img.skel {
+    color: transparent; /* hides the alt text while loading */
+    aspect-ratio: 1;
+}
+
+.aboutPhoto.skel {
+    aspect-ratio: 4 / 3;
+    width: 20rem;
+}
+
+/* Full-page skeleton */
+body.isLoading {
+    overflow: hidden;
+}
+
+#pageSkeleton {
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    display: flex;
+    background: var(--bg);
+    transition: opacity .4s ease, visibility .4s ease;
+}
+
+#pageSkeleton.done {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skSidebar {
+    width: var(--sidebar-w);
+    background: #000;
+    padding: 1rem .75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.skLogo { width: 80px; height: 80px; border-radius: 50%; }
+.skLine { width: 100%; height: 2.2rem; }
+
+.skMain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 2rem 1.5rem;
+}
+
+.skTitle { width: min(40rem, 90%); height: 3rem; }
+.skTitle.short { width: min(26rem, 70%); }
+.skMotto { width: min(16rem, 60%); height: 1.5rem; }
+.skButtons { display: flex; gap: 1rem; }
+.skBtn { width: 9rem; height: 2.5rem; border-radius: var(--radius); }
+.skCards {
+    display: grid;
+    width: min(60rem, 100%);
+    gap: 1rem;
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+.skCard { height: 8rem; border-radius: var(--radius); }
+
 /* Responsive */
 
 @media (max-width: 800px) {
@@ -595,6 +677,9 @@ footer small {
     .eventGrid {
         grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
     }
+    .skSidebar {
+        display: none;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -603,5 +688,8 @@ footer small {
     }
     *, *::before, *::after {
         transition: none !important;
+    }
+    .skBlock, img.skel {
+        animation: none;
     }
 }
