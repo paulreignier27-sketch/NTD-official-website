@@ -31,8 +31,14 @@ const events = [
     {
         name: "Pathfinder Camping 2026",
         location: "San Agustin, Romblon",
-        date: "2026-10-30 - 2026-11-02", // single day: "2026-11-27"
+        date: "2026-10-30 - 2026-11-02",
         theme: "Be prepared. Be adventurous. Be closer to God.",
+    },
+    {
+        name: "",
+        location: "",
+        date: "",
+        theme: "",
     },
 ];
 
@@ -54,6 +60,7 @@ const galleryPhotos = [
     { src: "r.jpg", alt: "Gallery photo 4" },
     { src: "world.jpg", alt: "Gallery photo 5" },
     { src: "https://scontent-mnl3-3.xx.fbcdn.net/v/t39.30808-6/839972153_122183139950709496_6607933860894492310_n.jpg?stp=dst-jpg_tt6&cstp=mx1536x2048&ctp=s1536x2048&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEr29T9iuVU0DCUjxSzuyF4YIOBfi-XvkFgg4F-L5e-QZPslQeWjgN_hYqftwG3CNTlOrEYkxhCIZIlyO37fQ2r&_nc_ohc=5bT46QiWaXEQ7kNvwFwFpM5&_nc_oc=AdohqaLwUn-veBBLRb-H1JIv18OcsKHgjaV_XiJq0Et9as26k8knR3_0pefwxBQB19LzN2vOovQKOzC_0nZp3-0M&_nc_zt=23&_nc_ht=scontent-mnl3-3.xx&_nc_gid=cH2bt1oMHHurntr1t4ebAQ&_nc_ss=7b2a8&oh=00_AQMfHNFajg3j8cI__Id3RB3pU4QolTFa5-QO4H90odQrwg&oe=6ACEA424", alt: "Gallery photo 6" },
+    { src: "https://scontent-mnl3-2.xx.fbcdn.net/v/t39.99422-6/842529800_1093457363447714_4974055113352216725_n.png?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF1uc7RCLOy2gbUu_w1u3ijZwTasNHb9PlnBNqw0dv0-Zp98TBNgjZD5Br-ogRYTtsKKzIsMfCJpcOjsPVhfAbM&_nc_ohc=-2rSsSE5bcwQ7kNvwHWt6Kj&_nc_oc=AdoayzOVDsnC6pFyO06w68bpw4WawnIoDVr39fXuvbVCxUYVoxBqLCJlaS63Zpt9eAeyqcxPac9D8rJ1FZe3OKhe&_nc_zt=14&_nc_ht=scontent-mnl3-2.xx&_nc_gid=_dRWB30MdEYlwS_MsZ5ldg&_nc_ss=7b2a8&oh=00_AQNIVgjh7Ry_8lopbVGqYNQc-BvVw4hUBfsWwEedeWiV3A&oe=6ACFF0B6", alt: "Gallery photo 7" },
 ];
 
 const MAX_VISIBLE = 4;
