@@ -12,6 +12,34 @@ const sermons = [
         url: "https://www.youtube.com/watch?v=39WSoKE1zE4",
         photo: "https://i.ytimg.com/vi/39WSoKE1zE4/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLCbsb5gEcFxQG0VGo1WPgMSMOXAsQ",
     },
+    {
+        id: 2,
+        title: "Buried Alive",
+        topic: "Baptism",
+        date: "2026-10-09",
+        speaker: "Pastor Jerry Patalinghug",
+        url: "https://www.youtube.com/watch?v=J__hBYxQnTM",
+        photo: "https://i.ytimg.com/vi/J__hBYxQnTM/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLBmhBpciCEafo14UOYjQgMWzaS9Kg",
+    },
+    {
+        id: 3,
+        title: "Living Life to the Fullest",
+        topic: "Lifestyle",
+        date: "2026-10-10",
+        speaker: "Pastor Jerry Patalinghug",
+        url: "https://www.youtube.com/watch?v=xtRJD1XgiPA",
+        photo: "https://i.ytimg.com/vi/xtRJD1XgiPA/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLBetuLAx8jnaDxObOH-1b2Sao9f4w",
+    },
+    {
+        id: 4,
+        title: "The Fall of Babylon",
+        topic: "Lifestyle",
+        date: "2026-10-08",
+        speaker: "Pastor Jerry Patalinghug",
+        url: "https://www.youtube.com/watch?v=xtRJD1XgiPA",
+        photo: "https://i.ytimg.com/vi/xtRJD1XgiPA/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLBetuLAx8jnaDxObOH-1b2Sao9f4w",
+    },
+    
 ];
 
 /* ---------- Helpers ---------- */
