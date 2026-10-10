@@ -33,13 +33,48 @@ const sermons = [
     {
         id: 4,
         title: "The Fall of Babylon",
-        topic: "Lifestyle",
+        topic: "Faith",
         date: "2026-10-08",
-        speaker: "Pastor Jerry Patalinghug",
-        url: "https://www.youtube.com/watch?v=xtRJD1XgiPA",
-        photo: "https://i.ytimg.com/vi/xtRJD1XgiPA/hq720.jpg?sqp=-oaymwErCNAFEJQDSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLBetuLAx8jnaDxObOH-1b2Sao9f4w",
+        speaker: "Pastor Max Dante Obbus",
+        url: "https://www.youtube.com/watch?v=X--FsEMu700&list=PLg1pK9yC4hiRSH6p4Mj42xU5gQBN_PCEw&index=3",
+        photo: "https://i.ytimg.com/vi/X--FsEMu700/hqdefault.jpg?sqp=-oaymwErCNACELwBSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLCCgfbG7G7b0omzIZ8sOaNMoJxZMw",
     },
-    
+    {
+        id: 5,
+        title: "The Mark of The Beast",
+        topic: "Faith",
+        date: "2026-10-07",
+        speaker: "Pastor Max Dante Obbus",
+        url: "https://www.youtube.com/watch?v=EYlwcWQHsKA&list=PLg1pK9yC4hiRSH6p4Mj42xU5gQBN_PCEw&index=4",
+        photo: "https://i.ytimg.com/vi/EYlwcWQHsKA/hqdefault.jpg?sqp=-oaymwErCNACELwBSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLDZ3RTviisFEhn0U_VUhZ4bJ9ZaOw",
+    },
+    {
+        id: 6,
+        title: "The Mark of The Beast",
+        topic: "Faith",
+        date: "2026-10-06",
+        speaker: "Pastor Max Dante Obbus",
+        url: "https://www.youtube.com/watch?v=gGkQetEUy0o&list=PLg1pK9yC4hiRSH6p4Mj42xU5gQBN_PCEw&index=5",
+        photo: "https://i.ytimg.com/vi/gGkQetEUy0o/hqdefault.jpg?sqp=-oaymwErCNACELwBSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLBof1fhvMlRINoTCvtfrCVpNogqKw",
+    },
+    {
+        id: 7,
+        title: "The Messiah and The Judgement",
+        topic: "Faith",
+        date: "2026-10-05",
+        speaker: "Pastor Abundionito Cayme",
+        url: "https://www.youtube.com/watch?v=NKeRehGOjRM&list=PLg1pK9yC4hiRSH6p4Mj42xU5gQBN_PCEw&index=6",
+        photo: "https://i.ytimg.com/vi/NKeRehGOjRM/hqdefault.jpg?sqp=-oaymwErCNACELwBSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLDnS1qYwi3HVTz8Vrb3BYTcbG80iQ",
+    },
+    {
+        id: 8,
+        title: "Rebuilding The Temple",
+        topic: "Faith",
+        date: "2026-10-03",
+        speaker: "Pastor Abundionito Cayme",
+        url: "https://www.youtube.com/watch?v=oocp4YEyNe0&list=PLg1pK9yC4hiRSH6p4Mj42xU5gQBN_PCEw&index=7",
+        photo: "https://i.ytimg.com/vi/oocp4YEyNe0/hqdefault.jpg?sqp=-oaymwErCNACELwBSFryq4qpAx0IARUAAIhCGAHYAQHiAQoIGBACGAY4AUABuAL3GA==&rs=AOn4CLBkEV0o-6pV8_fbN_Lt19H3rTaAXQ",
+    },
 ];
 
 /* ---------- Helpers ---------- */
