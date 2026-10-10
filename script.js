@@ -34,12 +34,6 @@ const events = [
         date: "2026-10-30 - 2026-11-02",
         theme: "Be prepared. Be adventurous. Be closer to God.",
     },
-    {
-        name: "",
-        location: "",
-        date: "",
-        theme: "",
-    },
 ];
 
 const announcements = [
@@ -283,8 +277,9 @@ function setupMenu() {
 /* ---------- Highlight the current section in the sidebar ---------- */
 
 function setupActiveLink() {
+    // Only in-page links (#section); the Sermon page link is skipped
     const links = new Map(
-        [...document.querySelectorAll("#sidebar nav a")].map((a) => [a.getAttribute("href").slice(1), a])
+        [...document.querySelectorAll("#sidebar nav a[href^='#']")].map((a) => [a.getAttribute("href").slice(1), a])
     );
 
     const observer = new IntersectionObserver(
@@ -303,12 +298,60 @@ function setupActiveLink() {
     });
 }
 
+/* ---------- Skeleton loading ---------- */
+
+// Shimmer on every image until it has loaded (works for lazy images too)
+function setupImageSkeletons() {
+    document.querySelectorAll("img:not(#lbImg)").forEach((img) => {
+        if (img.complete && img.naturalWidth > 0) return; // already loaded
+
+        img.classList.add("skel");
+        const done = () => img.classList.remove("skel");
+        img.addEventListener("load", done, { once: true });
+        img.addEventListener("error", done, { once: true });
+    });
+}
+
+// Full-page skeleton: stays at least 0.8s, leaves once the page and hero image
+// have loaded, and never stays longer than 7s even on a very slow connection
+function setupPageSkeleton() {
+    const overlay = $("#pageSkeleton");
+    if (!overlay) return;
+
+    const MIN_MS = 800;
+    const MAX_MS = 7000;
+    const started = performance.now();
+
+    const heroImage = new Promise((resolve) => {
+        const img = new Image();
+        img.onload = img.onerror = resolve;
+        img.src = "photos/image.png";
+    });
+
+    const pageLoaded = document.readyState === "complete"
+        ? Promise.resolve()
+        : new Promise((resolve) => window.addEventListener("load", resolve, { once: true }));
+
+    const timeout = new Promise((resolve) => setTimeout(resolve, MAX_MS));
+
+    Promise.race([Promise.all([heroImage, pageLoaded]), timeout]).then(() => {
+        const wait = Math.max(0, MIN_MS - (performance.now() - started));
+        setTimeout(() => {
+            overlay.classList.add("done");
+            document.body.classList.remove("isLoading");
+            setTimeout(() => overlay.remove(), 500);
+        }, wait);
+    });
+}
+
 /* ---------- Init ---------- */
 
 renderOrgChart();
 renderEvents();
 renderAnnouncements();
 renderGallery();
+setupImageSkeletons(); // after the renderers, so the images they create get a shimmer too
+setupPageSkeleton();
 setupMenu();
 setupLightbox();
 setupActiveLink();
