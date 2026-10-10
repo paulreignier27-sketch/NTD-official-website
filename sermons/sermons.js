@@ -189,3 +189,25 @@ form.addEventListener("submit", async (e) => {
         result.append(note);
     }
 });
+
+const privacyModal = document.getElementById("privacyModal");
+const openPrivacyLink = document.getElementById("openPrivacy");
+const closePrivacyBtn = document.getElementById("closePrivacy");
+
+openPrivacyLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    privacyModal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+});
+
+closePrivacyBtn.addEventListener("click", () => {
+    privacyModal.style.display = "none";
+    document.body.style.overflow = "auto";
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === privacyModal) {
+        privacyModal.style.display = "none";
+        document.body.style.overflow = "auto"
+    }
+})
